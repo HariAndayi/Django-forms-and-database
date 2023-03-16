@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>Register Student</title>
 </head>
 <body>
 
-<form action="" method="post">
+<form action="" method="POST">
+
+    {% csrf_token %}
 
     <input type="text" placeholder="Enter name" name="name">
     <input type="email" placeholder="Enter Email" name="email">
-    <input type="password" placeholder="Enter Password" name="Password">
+    <input type="number" placeholder="Enter ID Number" name="idnum">
     <input type="submit" value="Register">
 </form>
 
